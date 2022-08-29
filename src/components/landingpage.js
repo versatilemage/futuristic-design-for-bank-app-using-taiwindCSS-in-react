@@ -1,7 +1,14 @@
 import React from "react";
 import Emv from "./parts/emv";
+import { useNavigate } from "react-router-dom";
 
 function Landingpage() {
+
+    const navigate = useNavigate()
+
+    const onClick = (e) => {
+        navigate("/login")
+    }
     return (
         <>
         <div className="mx-[8em] my-[1em]">
@@ -121,7 +128,7 @@ function Landingpage() {
                     <h2 className="text-3xl font-bold capitalize text-white w-3/4">You do the business, we’ll handle the money.</h2>
                     <p className="text-lg text-slate-500 w-3/4">With the right credit card, you can improve your financial life by building credit,
                         earning rewards and saving money. But with hundreds of credit cards on the market.</p>
-                    <button className="capitalize px-6 py-3 bg-gradient-to-l from-sky-500 to-slate-100 rounded-lg w-1/4 font-bold">get started</button>
+                    <button className="capitalize px-6 py-3 bg-gradient-to-l from-sky-500 to-slate-100 rounded-lg w-1/4 font-bold" onClick={onClick}>get started</button>
                 </div>
                 <div className="flex flex-col space-y-10 items-center">
                     <div className="flex flex-row rounded-3xl hover:bg-slate-800 hover:opacity-80 w-4/5 hover:scale-105 space-x-5 p-5 transition duration-500">
@@ -257,7 +264,7 @@ function Landingpage() {
                     <p className="text-lg text-slate-400">Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor
                         .ç Aliquet ultrices ac, ametau.</p>
                     <button className="bg-gradient-to-r from-sky-500 to-slate-100
-                         rounded-lg font-medium capitalize py-4 px-6 w-1/4">get started</button>
+                         rounded-lg font-medium capitalize py-4 px-6 w-1/4" onClick={onClick}>get started</button>
                 </div>
                 <div className="flex flex-col space-y-5 items-center">
                     <div className="items-center rounded-2xl flex flex-col bg-gradient-to-tl 
@@ -320,7 +327,7 @@ function Landingpage() {
             </section>
 
             <section className="flex flex-row justify-between my-20">
-                <div className="flex flex-col py-10 px-5 w-3/12 bg-slate-700 space-y-5 rounded-2xl hover:bg-slate-800">
+                <div className="flex flex-col py-10 px-5 w-3/12 space-y-5 rounded-2xl hover:bg-slate-700 hover:scale-x-105 hover:scale-105 transition duration-700">
                     <div className="font-black text-5xl text-cyan-500 items-start">/ /</div>
                     <div>
                         <p className="text-lg text-slate-400">Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
@@ -334,7 +341,7 @@ function Landingpage() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col py-10 px-5 w-3/12 bg-slate-700 space-y-5 rounded-2xl hover:bg-slate-800">
+                <div className="flex flex-col py-10 px-5 w-3/12 space-y-5 rounded-2xl hover:bg-slate-700 hover:scale-x-105 hover:scale-105 transition duration-700">
                     <div className="font-black text-5xl text-cyan-500 items-start">/ /</div>
                     <div>
                         <p className="text-lg text-slate-400">Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
@@ -348,7 +355,7 @@ function Landingpage() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col py-10 px-5 w-3/12 bg-slate-700 space-y-5 rounded-2xl hover:bg-slate-800">
+                <div className="flex flex-col py-10 px-5 w-3/12 space-y-5 rounded-2xl hover:bg-slate-700 hover:scale-x-105 hover:scale-105 transition duration-700">
                     <div className="font-black text-5xl text-cyan-500 items-start">/ /</div>
                     <div>
                         <p className="text-lg text-slate-400">Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
@@ -375,14 +382,14 @@ function Landingpage() {
             </section>
 
             <section className="flex flex-row items-center content-center rounded-2xl 
-            bg-gradient-to-tl from-slate-800 to-slate-500 h-64 w-11/12 px-20 py-10 mx-20 my-36">
+            bg-gradient-to-tl from-slate-800 to-slate-500 h-64 w-10/12 px-20 py-10 mx-20 my-36">
                 <div className="flex flex-col text-justify w-3/4 space-y-5">
                     <h1 className="text-white text-5xl font-bold">let's try our servic now</h1>
                     <p className="text-lg text-slate-300 w-3/4">Everything you need to accept card payments and grow your business anywhere on the planet.</p>
                 </div>
                 <div>
                 <button className="bg-gradient-to-r from-sky-500 to-slate-100
-                         rounded-lg font-medium capitalize py-4 px-6">get started</button>
+                         rounded-lg font-medium capitalize py-4 px-6" onClick={onClick}>get started</button>
                 </div>
             </section>
             </div>
