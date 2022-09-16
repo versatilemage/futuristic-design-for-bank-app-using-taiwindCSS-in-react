@@ -6,14 +6,8 @@ const PORT = 3001
 const cors = require("cors")
 const app = express()
 
-const uri = "mongodb+srv://wildbadger:jkhinpiqosq@clusterbankapp.pn7rge3.mongodb.net/?retryWrites=true&w=majority"
-
-// app.use(cors({
-//     origin: "http://localhost:3000"
-// }))
-
 async function main () {
-    const uri = "mongodb+srv://wildbadger:jkhinpiqosq@clusterbankapp.pn7rge3.mongodb.net/?retryWrites=true&w=majority"
+    const uri = "mongodb+srv://wildbadger:<password>@clusterbankapp.pn7rge3.mongodb.net/?retryWrites=true&w=majority"
     const client = new MongoClient(uri)
 
     try {
